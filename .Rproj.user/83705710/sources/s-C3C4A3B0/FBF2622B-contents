@@ -1,0 +1,53 @@
+### CRAN ###
+
+install.packages(c("ggplot2", "devtools", "lme4"))
+
+
+
+### Github ###
+
+install.packages("devtools") #an den to exw
+library(devtools)
+install_github("author/package")
+
+### BioConductor ###
+
+source("https://bioconductor.org/biocLite.R")
+biocLite("GenomicFeatures")
+
+
+### Checking what packages you have installed ###
+
+installed.packages() 
+library()
+
+### update check ###
+old.packages()
+update.packages()  # gia ola update
+# gia ena valto mesa sthn parenthesh
+install.packages("packagename")
+
+### unload package ###
+detach("package:ggplot2", unload=TRUE) # i apo dipla, unchecking
+
+### Uninstalling packages ###
+
+remove.packages("ggplot2") #h appo dipla, remove
+
+### check version of R ###
+
+# type version into the console
+sessionInfo() #- it will tell you what version of R you are running along with a listing of all of the packages you have loaded
+
+### checking functions of a package ###
+
+help(package = "ggplot2") # and you will see all of the many functions that ggplot2 provides.
+
+#To see the vignettes included in a package, you can use the browseVignettes() function.
+#For example, let’s look at the vignettes included in ggplot2:browseVignettes("ggplot2")
+browseVignettes("ggplot2")
+
+
+install.packages('KernSmooth')
+library(KernSmooth)
+     
